@@ -2,7 +2,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 void multiply(int a[], int i, int &n){
-    int carry = 0; //always initialize carry with 1 
+    int carry = 0; //always initialize carry with 0 
     for(int j = 0; j<n; j++){ //loop will run upto last element only
         int product = a[j]*i + carry;
         a[j] = product%10;
